@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .sub-header {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            background-color: #fff;
+            width: 20%;
+        }
+        .headline {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .headline a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Main Article */
+        .main-article {
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        /* Right Sidebar */
+        .right-sidebar {
+            background-color: #f8f8f8;
+            width: 20%;
+        }
+
+        /* Popular & Recommended */
+        .popular, .recommended {
+            font-size: 14px;
+            color: #333;
+        }
+        .popular-list, .recommended-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .popular-list li, .recommended-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .popular-list li a, .recommended-list li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .popular-list li a:hover, .recommended-list li a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>NEWS</h1>
+        <div class="sub-header">
+            Monday 28 October 2024 | 24 Rabi Al-Akhar 1446
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">LATEST</a>
+        <a href="#">PAKISTAN</a>
+        <a href="#">WORLD</a>
+        <a href="#">BUSINESS & ECONOMY</a>
+        <a href="#">SPORTS</a>
+        <a href="#">LIFE & STYLE</a>
+        <a href="#">VIDEOS</a>
+    </div>
+
+    <!-- Main Content Table -->
+    <table>
+        <tr>
+            <!-- Left Sidebar -->
+            <td class="left-sidebar">
+                <h3>Top Stories</h3>
+                <div class="headline"><a href="#">PTI decides to join Judicial Commission</a></div>
+                <div class="headline"><a href="#">PMD forecasts dry weather for coming week</a></div>
+                <div class="headline"><a href="#">Imaan Mazari arrested with husband</a></div>
+                <div class="headline"><a href="#">Business leader calls for lower interest rates</a></div>
+                <div class="headline"><a href="#">Lahore struggles with pollution and smog</a></div>
+                <div class="headline"><a href="#">PSX rises over 850 points</a></div>
+            </td>
+
+            <!-- Main Article Section -->
+            <td class="main-article" style="width: 40%;">
+                <img src="https://via.placeholder.com/400x200" alt="Main News Image" style="width:100%; border-bottom: 1px solid #ddd;">
+                <h3 style="padding: 15px;">10 IPPs demand contract termination from Prime Minister amid rising tariff concerns</h3>
+                <p style="padding: 15px;">In a significant development, ten independent power producers (IPPs) have collectively requested the termination of their contracts due to escalating tariff issues. This issue is currently under consideration by the Prime Minister.</p>
+            </td>
+
+            <!-- Right Sidebar -->
+            <td class="right-sidebar">
+                <h3>Popular</h3>
+                <ul class="popular-list">
+                    <li><a href="#">TikToker Minahil Malik says viral video is 'fake'</a></li>
+                    <li><a href="#">Income tax calculator for FY 2024-25</a></li>
+                    <li><a href="#">PAK vs ENG - National team, cricket fans happy</a></li>
+                    <li><a href="#">Corinna Kopf announces retirement</a></li>
+                    <li><a href="#">SHC orders re-run of MDCAT amid allegations</a></li>
+                </ul>
+            </td>
+        </tr>
+        
+        <!-- Recommended Section as a row under the main content -->
+        <tr>
+            <td colspan="3" class="recommended" style="background-color: #fff;">
+                <h3>Recommended</h3>
+                <table style="width: 100%;">
+                    <tr>
+                        <td><a href="#">Pakistani citizen abducted heading to Thailand</a></td>
+                        <td><a href="#">PCB takes notice of Ramiz Raja's questions</a></td>
+                        <td><a href="#">Following roads will be closed in Karachi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Nicole Kidman, Harris Dickinson scenes in 'Babygirl'</a></td>
+                        <td><a href="#">Alizeh Shah hits back at criticism</a></td>
+                        <td><a href="#">KP govt announces measures to combat harassment</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
